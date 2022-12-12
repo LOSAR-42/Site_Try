@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} {{ title }}  {% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1> {{ title }} </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore, esse et nisi nobis porro vero? Ad assumenda beatae, earum, illum laborum modi nulla, obcaecati odit officia perspiciatis ullam ut?</p>
+
+        {%for elements in values %}
+            {% if elements == 'v1'  %}
+                {% filter upper %}
+                    <p> {{ elements }} </p>
+                {% endfilter %}
+            {% endif %}
+        {% endfor  %}
+
+        {{obt.anime|upper}}
+
+    </div>
+{% endblock %}

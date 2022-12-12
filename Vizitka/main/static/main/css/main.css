@@ -1,0 +1,107 @@
+body {
+    background: #fafafa;
+}
+
+/* левый сайд-борд */
+aside {
+    float: left;
+    background: #e8e8e8;
+    width: 17%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #FDD9D9;
+    /* Край блоков */
+    border-right: 2px solid #d4d4d4;
+}
+
+/* Img левый-верх */
+aside img{
+    width: 90px;
+    float: left;
+}
+
+/* Tired */
+aside .logo{
+    font-size: 37px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+    color: #012e38;
+}
+
+aside .logo_second{
+    margin-top: 100px;
+    font-size: 30px;
+    color: #012e38;
+}
+
+/* Navigation */
+aside h3{
+    margin-top: 50px;
+    color: #012e38;
+}
+
+/* Убирает разметку с навигации */
+aside ul { list-style: none; }
+aside ul li {
+    color: #012e38;
+    display: block;
+    margin-top: 10px;
+    /* Добавляет плавность для transform  */
+    transition: transform all .3s ease;
+}
+
+/* Добавляет анимацию к "Главная" "Обо мне" "заглавная" */
+aside ul li:hover, aside ul a:hover {
+    color: #A05452;
+    /* убирает нижнее подчеркивание */
+    text-decoration: none;
+    /* увеличение текста при наведении */
+    transform: scale(1.05);
+}
+
+
+
+/*____________________________________________________________________________________________________________________*/
+/* Блок информации  */
+main .features{
+    float: left;
+    width: 75%;
+    color: #116466;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.ch_btn{
+    color: #416460;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* font-size == Размер шрифта */
+main .features h1 { font-size: 50px;}
+
+/*max-width == ширина обьекта    margin = отступы, между строчками внутри блока*/
+main .features p { max-width: 400px; margin: 20px auto}
+
+/* Блоки с фильмами */
+.alert-warning{
+    float: left;
+    /*lear: both;*/
+    background: #D1E8E2;
+    width: 400px;
+    margin: 20px;
+    /* Определяет с какой стороне будут виджеты */
+    text-align: center;
+    border: 2px solid #d4d4d4;
+}
+/*____________________________________________________________________________________________________________________*/
+
+/* Формы полей заполнения */
+form {
+    width: 32%;
+    margin-top: 50px;
+    margin-left: 430px;
+}
