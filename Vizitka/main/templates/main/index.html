@@ -5,17 +5,22 @@
 {% block content %}
     <div class="features">
         <h1> {{ title }} </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore, esse et nisi nobis porro vero? Ad assumenda beatae, earum, illum laborum modi nulla, obcaecati odit officia perspiciatis ullam ut?</p>
 
-        {%for elements in values %}
-            {% if elements == 'v1'  %}
-                {% filter upper %}
-                    <p> {{ elements }} </p>
-                {% endfilter %}
-            {% endif %}
-        {% endfor  %}
+    </div>
+    <div class="index_second_html">
+        <div>
+            <h3> Зачем нужен сайт </h3>
+        </div>
+        <div class="indsec_p">
+            <p>У меня с друзьями есть традиция, собираться и под кальян смотреть ужастики<br>
+            Но со временем возникла проблема, мы пересмотрели так много ужастиков, что стало трудно найти новые.
+            <br>И вот я решил сделать телеграм бота, в которого мы будем скидывать найденные ужастики. Но потом я подумал
+                "... Зачем Бот, когда можно сайт.". <br> И вот я сижу и мучаюсь с этим сайтом  </p>
+        </div>
 
-        {{obt.anime|upper}}
+    </div>
+    <div class="index_third_html">
+        <h2> Третий блок информции index.html </h2>
 
     </div>
 {% endblock %}
