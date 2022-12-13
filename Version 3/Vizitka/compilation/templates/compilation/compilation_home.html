@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Каталог{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1> Каталог </h1>
+        {% for el in movie %}
+            <div class="alert alert-warning">
+                <h3> {{ el.title }} </h3>
+                <p> {{ el.genre }} </p>
+                <a href="{% url 'compilation_detail' el.id %}" class="btn btn-outline-dark"> Подробнее </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
