@@ -1,0 +1,165 @@
+/*                                                    Header
+ _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \
+*/
+
+header {
+    height: 300px;
+}
+
+/*Логотип сайта */
+.logo_contact {
+    float: left;
+    height:300px;
+    width: 300px;
+    background-image: url('../img/seal.png');
+    background-size: 100% auto;
+}
+/*`Блок меню : Главная Каталог Контакты*/
+.menu_contact{
+    width: 500px;
+    margin-left: 300px;
+    font-family: 'Press Start 2P';
+    list-style-type: none;
+}
+
+/* Главная меню  */
+.basic_block{
+    width: 200px;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Каталог меню */
+.catalog_block{
+    width: 200px;
+    margin-left: 120px;
+    padding: 20px;
+    font-size: 30px;
+}
+/* Контакты меню */
+.contact_block{
+    width: 200px;
+    margin-left: 220px;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+/* анимация Главная Каталог Контакты */
+.contact_block:hover, .catalog_block:hover, .basic_block:hover{
+    /* Увеличение при наведении  */
+    transform: scale(1.05);
+    /* Скорость увелечения при наведении  */
+    transition: .2s ease;
+}
+
+/*Убирает подчеркивания меню*/
+.basic_block_a, .catalog_block_a, .contact_block_a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*                                                    Main
+ _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \
+*/
+.main_v1 {
+    height: 1200px;
+    width: 100%;
+    border: 5px double black;
+}
+
+.block_inf {
+    width: 99.5%; height: 70px;
+    border: 3px solid black;
+    color: white;
+}
+.who {
+    float: left;
+    margin-top: 1%; margin-left: 9%;
+    width: 10%; height: 25px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    vertical-align: middle;
+}
+.why {
+    float: left;
+    margin-left: 23%; margin-top: 1%;
+    width: 16%; height: 25px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+.cont {
+    float: left;
+    margin-left: 23%; margin-top: 1%;
+    width: 10%; height: 25px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+
+.photo {
+    float: left;
+    height: 600px;
+    width: 470px;
+    border: 5px double blue;
+}
+.photov2 {
+    float: right;
+    height: 600px;
+    width: 470px;
+    border: 5px double blue;
+}
+.photov3 {
+    float: none;
+    height: 600px;
+    width: 470px;
+    margin-left: 36%;
+    margin-top: 15%;
+    border: 5px double blue;
+}
+.photo_text{
+    float: none;
+    height: 100px;
+    width: 200px;
+    margin-left: 44%;
+    margin-top: 10%;
+    font-size: 30px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+
+
+.main_v2 {
+    height: 900px;
+    width: 100%;
+    border: 5px double black;
+}
+.whyv1{
+    float: left;
+    height: 100%;
+    width: 33.3%;
+    background-color: #C1B3B3;
+}
+.whyv2{
+    float: left;
+    height: 100%;
+    width: 33.3%;
+    background-image: url('../img/call.jpg');
+    background-size: 100% auto;
+}
+.whyv3{
+    float: left;
+    height: 100%;
+    width: 33.3%;
+    background-color: #A2B6C2;
+}
