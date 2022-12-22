@@ -1,0 +1,55 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contact</title>
+
+        <!-- Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main/css/contact.css' %}" >
+</head>
+<body>
+    <header>
+        <div class="logo_contact"></div>
+        <div class="menu_contact">
+            <div class="basic_block"><a href="{% url 'home' %}" class="basic_block_a"><li><i>Главная</i></li></a></div>
+            <div class="catalog_block"><a href="{% url 'catalog' %}" class="catalog_block_a"><li><i>Каталог</i></li></a></div>
+            <div class="contact_block"><a href="{% url 'contact' %}" class="contact_block_a"><li><i>Информация</i></li></a></div>
+        </div>
+    </header>
+    <main class="main_v1">
+        <div class="block_inf">
+            <div class="who">Кто я</div>
+            <div class="why">Зачем сайт</div>
+            <div class="cont">Контакты</div>
+        </div>
+        <div class="photo"> </div>
+        <div class="photov2"> </div>
+        <div class="photo_text"> <p>Выгляжу так</p> </div>
+        <div class="whov1"> </div>
+        <div class="photov3"> </div>
+    </main>
+
+    <main class="main_v2">
+        <div class="whyv1"><p class="whyv1_text">Никогда не знал, что о себе рассказать и не потому что нечего, просто когда я задаюсь этим вопросом в голове возникает мартышка с тарелками<br>
+        Это как, когда тебя спрашивают, какой фильм ужасов посмотреть. Ты вроде их пересмотрел десятки, но после заданоного вопроса можешь вспомнить, только пару штук</p>
+        </div>
+        <div class="whyv2">
+            <p class="whyv2_text">У меня с друзьями есть традиция, собираться раз в неделю и под кальян смотреть фильмы ужасов.<br>
+            Но со временем возникла проблема, мы пересмотрели так много ужастиков, что стало трудно найти новые.
+            <br>Я почесал репу и начал делать Телеграм-бота, в которого мы будем сгружать найденные фильмы, затем когда понадобиться,
+                тот выдаст нам случайный из них. Но потом я подумал "... Зачем Бот, когда можно сайт.". Сижу теперь и мучаюсь с этим сайтом</p>
+            <p class="whyv2_textv2"> Почта: dorohov1444@yandex.ru <br> Telegram: @Mike_kiid <br> Телефон: 8-(905) 912-97-78 </p>
+        </div>
+        <div class="whyv3"><p class="whyv3_text"></p></div>
+    </main>
+
+</body>
+</html>
