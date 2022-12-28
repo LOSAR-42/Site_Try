@@ -1,0 +1,73 @@
+
+/* левый сайд-борд */
+aside {
+    float: left;
+    background: #BABABA;
+    width: 17%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #FDD9D9;
+    /* Край блоков */
+    border-right: 2px solid #d4d4d4;
+}
+
+/* Img левый-верх */
+aside img{
+    width: 90px;
+    float: left;
+}
+
+/* Tired */
+aside .logo{
+    font-size: 37px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+    color: #E6F2ED;
+}
+
+aside .logo_second{
+    margin-top: 100px;
+    font-size: 30px;
+    color: #E6F2ED;
+}
+
+/* Navigation */
+aside h3{
+    margin-top: 50px;
+    color: #E6F2ED;
+}
+
+/* Убирает разметку с навигации */
+aside ul { list-style: none; }
+aside ul li {
+    color: #012e38;
+    display: block;
+    margin-top: 10px;
+    /* Добавляет плавность для transform  */
+    transition: transform all .3s ease;
+}
+
+/* Добавляет анимацию к "Главная" "Обо мне" "заглавная" */
+aside ul li:hover, aside ul a:hover {
+    color: #E6F2ED;
+    /* убирает нижнее подчеркивание */
+    text-decoration: none;
+    /* увеличение текста при наведении */
+    transform: scale(1.05);
+}
+_________________
+
+<aside>
+        <img src=" {% static 'main/img/purple-eye.png' %}">
+        <span class="logo"> Tired </span>
+        <span class="logo_second"> DreamOfSleep </span>
+        <h3> Navigation </h3>
+        <ul>
+            <a href="{% url 'home' %}"><li> <i class="bi bi-house"></i></i>Главная</li></a>
+            <a href="{% url 'about' %}"><li> <i class="bi bi-file-person"></i>Обо мне </li></a>
+            <a href="{% url 'compilation_home' %}"><li> <i class="bi bi-film"></i>Сборник</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-light"> <i class="fas fa-plus-circle"></i> Добавить </button></li></a>
+        </ul>
+    </aside>
