@@ -1,0 +1,43 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+
+    <!-- Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'main/css/basic.css' %}" >
+</head>
+<body>
+    <header class="contact_h">
+        <div class="logo"></div>
+        <div class="menu">
+            <div class="basic_block"><a href="{% url 'home' %}" class="basic_block_a"><li><i>Главная</i></li></a></div>
+            <div class="catalog_block"><a href="{% url 'catalog' %}" class="catalog_block_a"><li><i>Каталог</i></li></a></div>
+            <div class="contact_block"><a href="{% url 'contact' %}" class="contact_block_a"><li><i>Информация</i></li></a></div>
+        </div>
+    </header>
+    <main class="contact_m">
+        <div class="first_block">
+            <div class="fb_mini">
+                <p>У меня с друзьями есть традиция, собираться раз в неделю и под кальян смотреть ужастики.<br>
+            Но со временем возникла проблема, мы пересмотрели так много ужастиков,
+            </p>
+            </div>
+            <div class="fb_miniv2">
+                <p> что стало трудно найти новые.
+            <br>Я почесал репу и начал делать . Сижу теперь и мучаюсь с этим сайтом</p>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+</html>

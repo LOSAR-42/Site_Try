@@ -1,0 +1,217 @@
+/*                                                    Header
+ _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \
+*/
+
+header {
+    height: 300px;
+}
+
+/*Логотип сайта */
+.logo_contact {
+    float: left;
+    height:300px;
+    width: 300px;
+    background-image: url('../img/seal.png');
+    background-size: 100% auto;
+}
+/*`Блок меню : Главная Каталог Контакты*/
+.menu_contact{
+    width: 500px;
+    margin-left: 300px;
+    font-family: 'Press Start 2P';
+    list-style-type: none;
+}
+
+/* Главная меню  */
+.basic_block{
+    width: 200px;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Каталог меню */
+.catalog_block{
+    width: 200px;
+    margin-left: 120px;
+    padding: 20px;
+    font-size: 30px;
+}
+/* Контакты меню */
+.contact_block{
+    width: 200px;
+    margin-left: 220px;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+/* анимация Главная Каталог Контакты */
+.contact_block:hover, .catalog_block:hover, .basic_block:hover{
+    /* Увеличение при наведении  */
+    transform: scale(1.05);
+    /* Скорость увелечения при наведении  */
+    transition: .2s ease;
+}
+
+/*Убирает подчеркивания меню*/
+.basic_block_a, .catalog_block_a, .contact_block_a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*                                                    Main
+ _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \
+*/
+/*  большой блок */
+.main_v1 {
+    height: 1200px;
+    width: 100%;
+}
+/* блок с who why cont */
+.block_inf {
+    width: 99.5%; height: 70px;
+    border: 3px solid black;
+    color: white;
+}
+.who {
+    float: left;
+    margin-top: 1%; margin-left: 9%;
+    width: 10%; height: 25px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    vertical-align: middle;
+}
+.why {
+    float: left;
+    margin-left: 23%; margin-top: 1%;
+    width: 16%; height: 25px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+.cont {
+    float: left;
+    margin-left: 23%; margin-top: 1%;
+    width: 10%; height: 25px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+
+.photo {
+    float: left;
+    height: 600px;
+    width: 470px;
+    border: 5px double blue;
+}
+.photov2 {
+    float: right;
+    height: 600px;
+    width: 470px;
+    border: 5px double blue;
+}
+.photov3 {
+    float: none;
+    height: 600px;
+    width: 470px;
+    margin-left: 33%;
+    margin-top: 15%;
+    border: 5px double blue;
+    width: 33.3%;
+}
+.photo_text{
+    float: none;
+    height: 100px;
+    width: 200px;
+    margin-left: 44%;
+    margin-top: 10%;
+    font-size: 30px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+
+/*Второй блок информации*/
+.main_v2 {
+    height: 900px;
+    width: 100%;
+}
+
+/*Обо мне*/
+.whyv1{
+    float: left;
+    height: 100%;
+    width: 33.3%;
+}
+/*зачем сайт / контакты*/
+.whyv2{
+    float: left;
+    height: 100%;
+    width: 33.3%;
+}
+/* пусто */
+.whyv3{
+    float: left;
+    height: 100%;
+    width: 33.0%;
+}
+
+/*Кто я*/
+.whyv1_text {
+    float: left;
+    margin-left: 20%;
+    height: 30%;
+    width: 100%;
+    box-shadow: 0 0 5px 1px;
+    border: 1px solid #7B909C;
+    background-color: #F3F3F3;
+}
+.whyv1_text{
+    font-size: 16px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+/* Зачем сайт */
+.whyv2_text {
+    float: left;
+    margin-left: 80%;
+    height: 30%;
+    width: 100%;
+    box-shadow: 0 0 5px 1px;
+    border: 1px solid #7B909C;
+    background-color: #F3F3F3;
+}
+.whyv2_text{
+    font-size: 16px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+}
+
+/* Контакты */
+.whyv2_textv2 {
+    float: left;
+    margin-left: ;
+    height: 30%;
+    width: 100%;
+    box-shadow: 0 0 5px 1px;
+    border: 1px solid #7B909C;
+    background-color: #F3F3F3;
+    font-size: 18px;
+    font-family: 'Press Start 2P';
+    line-height : 2;
+    text-align: left;
+}
+.whyv2_textv2{
+    font-size: 18px;
+    font-family: 'Press Start 2P';
+    line-height : 2;
+    text-align: left;
+}

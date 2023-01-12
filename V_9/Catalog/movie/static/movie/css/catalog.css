@@ -1,0 +1,156 @@
+body {
+    background-image: url('../img/pumpkin.jpg');
+    background-size: 100% auto;
+}
+
+/*                                                    Header
+ _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \
+*/
+
+header {
+    height: 300px;
+}
+
+/*Логотип сайта */
+.logo_contact {
+    float: left;
+    height:300px;
+    width: 300px;
+    background-image: url('../img/seal.png');
+    background-size: 100% auto;
+}
+/*`Блок меню : Главная Каталог Контакты*/
+.menu_contact{
+    width: 500px;
+    margin-left: 300px;
+    font-family: 'Press Start 2P';
+    list-style-type: none;
+}
+
+/* Главная меню  */
+.basic_block{
+    width: 200px;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Каталог меню */
+.catalog_block{
+    width: 200px;
+    margin-left: 120px;
+    padding: 20px;
+    font-size: 30px;
+}
+/* Контакты меню */
+.contact_block{
+    width: 200px;
+    margin-left: 220px;
+    padding: 20px;
+    font-size: 30px;
+
+}
+
+/* анимация Главная Каталог Контакты */
+.contact_block:hover, .catalog_block:hover, .basic_block:hover{
+    /* Увеличение при наведении  */
+    transform: scale(1.05);
+    /* Скорость увелечения при наведении  */
+    transition: .2s ease;
+}
+
+/*Убирает подчеркивания меню*/
+.basic_block_a, .catalog_block_a, .contact_block_a {
+    text-decoration: none;
+    color: white;
+}
+/*                                                    Main
+ _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _  _
+/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \
+*/
+
+.basic {
+    float: left;
+    margin-left: 5%;
+    height: 100%;
+    width: 90%;
+    border: solid grey;
+    border-width: 0.5px 0px;
+}
+
+.btn_create {
+    height: 30px;
+    width: 20%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P';
+    list-style-type: none;
+}
+
+
+.tile_movie{
+    height: 1000px;
+    width: 100%;
+    font-family: 'Press Start 2P';
+    list-style-type: none;
+    color: white;
+}
+
+/* Блоки с фильмами */
+.alert-warning{
+    float: left;
+    width: 15%;
+    height: 350px;
+    margin-left: 3.9%;
+    margin-top: 1.7%;
+    text-align: center;
+    border: 1px solid #666666;
+    border-width: thin;
+    background-image: url('../img/tenor.gif');
+    background-size: 100% 100%;
+    /*opacity: .4;*/
+}
+
+
+/* Тест названия фильма */
+.title {
+    width: 100%;
+    height: 10%;
+    font-size: 15px;
+
+}
+/* Текст рейтинга */
+.rating {
+    margin-left: 80%;
+    width: 14%;
+    height: 10%;
+    font-size: 13px;
+}
+
+.btn_more {
+  margin-top: 70%;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  font-family: 'Press Start 2P';
+  font-size: 9px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.btn_more:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+}

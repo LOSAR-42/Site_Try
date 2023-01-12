@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Каталог</title>
+
+    <!-- Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'movie/css/catalog.css' %}" >
+</head>
+<body>
+    <header>
+        <div class="logo_contact"></div>
+        <div class="menu_contact">
+            <div class="basic_block"><a href="{% url 'home' %}" class="basic_block_a"><li><i>Главная</i></li></a></div>
+            <div class="catalog_block"><a href="{% url 'catalog' %}" class="catalog_block_a"><li><i>Каталог</i></li></a></div>
+            <div class="contact_block"><a href="{% url 'contact' %}" class="contact_block_a"><li><i>Информация</i></li></a></div>
+        </div>
+    </header>
+    <main class="basic">
+        <!--<div class="btn_create"><a href="{% url 'create' %}" ><li><i>Добавить</i></li></a></div>-->
+        <div class="tile_movie">
+            {% for element in movie %}
+                <div class="alert-warning">
+                    <p class="rating">{{ element.rating }}</p>
+                    <p class="title">{{ element.title }}</p>
+                    <a href="{% url 'movie_detail' element.id %}" class="btn_more">Подробнее</a>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>

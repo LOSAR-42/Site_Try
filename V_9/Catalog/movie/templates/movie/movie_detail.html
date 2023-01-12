@@ -1,0 +1,46 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Фильм</title>
+
+    <!-- Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'movie/css/movie_detail.css' %}" >
+</head>
+<body>
+    <header>
+        <div class="logo_contact"></div>
+        <div class="menu_contact">
+            <div class="basic_block"><a href="{% url 'home' %}" class="basic_block_a"><li><i>Главная</i></li></a></div>
+            <div class="catalog_block"><a href="{% url 'catalog' %}" class="catalog_block_a"><li><i>Каталог</i></li></a></div>
+            <div class="contact_block"><a href="{% url 'contact' %}" class="contact_block_a"><li><i>Информация</i></li></a></div>
+        </div>
+    </header>
+    <main>
+        <div class="basic">
+            <div class="img_board"></div>
+            <div class="giv_rating">
+                <div class="rating_star"> </div>
+                <p class="rating"> {{ movie.rating }} </p>
+            </div>
+            <div class="div_title">
+                <p class="title">{{ movie.title }}</p>
+            </div>
+            <div class="div_information">
+                <dl class="">
+                    <dt class="dt_description">Описание</dt>
+                    <dd class="description">{{ movie.description }}</dd>
+                </dl>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
